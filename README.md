@@ -4,7 +4,7 @@ A dark, modern portfolio website showcasing my web development work. Built with 
 
 **Live Site:** [nancyjoy-portfolio.vercel.app](https://nancyjoy-portfolio.vercel.app)
 
-## 📋 About
+## About
 
 This portfolio highlights three shipped projects:
 
@@ -12,7 +12,7 @@ This portfolio highlights three shipped projects:
 - **Maisha Beauty Lounge** — Responsive salon & spa booking website (HTML5, CSS3, JavaScript, Calendly, Formspree)
 - **Crumble & Co.** — Artisan bakery marketing website (HTML5, CSS3, JavaScript, Unsplash API)
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Frontend:**
 - HTML5, CSS3, Vanilla JavaScript
@@ -23,23 +23,30 @@ This portfolio highlights three shipped projects:
 - Vercel (deployment)
 - Git & GitHub
 
-## 🚀 Getting Started
-
-### Local Setup
-
-1. Clone the repository:
-```bash
-   git clone https://github.com/Nancyjoy3365/web.portfolio.git
-   cd web.portfolio
-```
-
-2. Open with a local server:
-   - Install [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VS Code
-   - Right-click `index.html` → "Open with Live Server"
-   - Site opens at `http://localhost:5500`
-
-3. View in browser:
-   - Navigate to the local server URL
-   - Explore the projects and contact section
-
 ### Folder Structure
+web.portfolio/
+├── index.html # Main portfolio page
+├── images/ # Project screenshots
+│ ├── elimucards.png
+│ ├── maisha.png
+│ └── crumble.png
+└── README.md
+
+## Features
+
+- **Dark theme with aurora gradient** — inspired by modern design aesthetics
+- **Project showcase** — live links and GitHub repos for all three projects
+- **Tech stack display** — tools and languages used
+- **Responsive design** — works on desktop, tablet, and mobile
+- **Smooth animations** — scroll-triggered reveals (respects `prefers-reduced-motion`)
+- **Contact section** — email and phone links
+
+## Contact
+
+- **Email:** nancyjoy102@gmail.com
+- **Phone:** 0700 552 933
+- **GitHub:** [github.com/Nancyjoy3365](https://github.com/Nancyjoy3365)
+
+---
+
+Built with care. No frameworks, no build tools — just clean HTML, CSS, and JavaScript.
