@@ -49,4 +49,4 @@ web.portfolio/
 
 ---
 
-Built with care. No frameworks, no build tools — just clean HTML, CSS, and JavaScript.
+Built with care. No frameworks, no build tools just clean HTML, CSS, and JavaScript.
