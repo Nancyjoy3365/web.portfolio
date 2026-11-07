@@ -200,6 +200,12 @@
   .project:hover .proj-thumb img{
     transform:scale(1.02);
   }
+  .proj-gallery{display:flex; flex-direction:column; gap:12px; min-width:0;}
+  .proj-gallery .proj-thumb{min-height:0;}
+  .proj-shots{display:flex; gap:12px;}
+  .proj-shots .proj-thumb{flex:1; padding:10px; max-height:260px;}
+  .proj-shots .proj-thumb img{max-height:240px; width:auto; max-width:100%;}
+  .proj-note{font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--muted-2);}
   .eyebrow-tag{
     font-family:'IBM Plex Mono', monospace; font-size:11px;
     color:var(--teal); text-transform:uppercase; letter-spacing:0.08em;
@@ -259,7 +265,7 @@
 <div class="topnav">
   <div class="nav-meta">
     <div class="email"><a href="mailto:nancyjoy102@gmail.com">nancyjoy102@gmail.com</a></div>
-    <div class="avail">Available for freelance work</div>
+    <div class="avail">Available for work</div>
   </div>
   <button class="menu-btn serif" id="menuOpen" aria-haspopup="true" aria-expanded="false">Menu</button>
 </div>
@@ -300,35 +306,68 @@
         <div class="eyebrow">Selected work</div>
         <h2>Projects I've shipped</h2>
       </div>
-      <p>A mix of client websites and one full-stack system, built end to end — frontend, and where noted, the backend and database too.</p>
+      <p>Full-stack systems used by real businesses, plus client websites, built end to end: frontend, and where noted, the backend and database too.</p>
     </div>
 
     <div class="projects">
 
-      <!-- FEATURED PROJECT: ElimuCards -->
+      <!-- FEATURED PROJECT: Restaurant POS -->
       <article class="project featured reveal">
-        <div class="proj-thumb">
-          <img src="images/elimucards.png" alt="ElimuCards login page screenshot" loading="lazy">
+        <div class="proj-gallery">
+          <div class="proj-thumb">
+            <img src="images/pos-order.png" alt="Restaurant POS order screen with menu categories and order summary" loading="lazy">
+          </div>
+          <div class="proj-shots">
+            <div class="proj-thumb">
+              <img src="images/pos-mobile.png" alt="Restaurant POS mobile order screen for waiters" loading="lazy">
+            </div>
+          </div>
         </div>
         <div>
-          <span class="eyebrow-tag">Flagship · Full-stack</span>
-          <h3>ElimuCards</h3>
-          <p class="proj-desc">A digital CBC &amp; Cambridge report card system for Kenyan schools. Teachers enter grades once through role-based dashboards; parents view results instantly from their phones. Includes a database, multi-role access control, and school-isolated data.</p>
+          <span class="eyebrow-tag">Flagship · Full-stack · Client project</span>
+          <h3>Restaurant POS &amp; Management System</h3>
+          <p class="proj-desc">A full point-of-sale system for a busy restaurant, covering ordering, the kitchen, billing, inventory, staff and reporting, with role-based access for admins, cashiers, chefs, kitchen assistants and waiters.</p>
+          <p class="proj-desc">Built 50+ REST API routes on a 28-table SQL Server database with transactions for orders and payments. Includes a mobile-first waiter screen, a kitchen display that ranks tickets by urgency, split payments, VAT-inclusive pricing and sales reports.</p>
           <div class="tags">
-            <!-- swap in your real stack -->
+            <span class="tag">Next.js</span>
             <span class="tag">React</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Auth &amp; roles</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">SWR</span>
+            <span class="tag">Role-based access</span>
           </div>
-          <div class="proj-links">
-            <a href="https://elimu-cards.vercel.app" target="_blank" rel="noopener">Live site
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-            </a>
-            <a href="https://github.com/Nancyjoy3365/ElimuCards" target="_blank" rel="noopener">GitHub
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-            </a>
+          <p class="proj-note">Private client code · sensitive details blurred</p>
+        </div>
+      </article>
+
+      <!-- PROJECT: Field Sales Management System -->
+      <article class="project reveal">
+        <div class="proj-gallery">
+          <div class="proj-thumb">
+            <img src="images/field-sales-reroute.png" alt="Field sales app route change request form" loading="lazy">
           </div>
+          <div class="proj-shots">
+            <div class="proj-thumb">
+              <img src="images/field-sales-mobile-1.png" alt="Field sales app weekly route plan on mobile" loading="lazy">
+            </div>
+            <div class="proj-thumb">
+              <img src="images/field-sales-mobile-2.png" alt="Field sales app reroute requests on mobile" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow-tag">Team project · Esque Kenya</span>
+          <h3>Field Sales Management System</h3>
+          <p class="proj-desc">An offline-first web app for a major fuel and lubricants company, used by field sales reps, distributors and supervisors to plan routes, visit outlets, take orders and report on the market. Built in a team of three.</p>
+          <p class="proj-desc">Designed and built the route change workflow from database to UI, added a market survey for outlet visits and GPS capture for field work, and fixed production issues across the React/TypeScript front end and the ASP.NET Core API.</p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Offline-first</span>
+          </div>
+          <p class="proj-note">Private client code · sensitive details blurred</p>
         </div>
       </article>
 
@@ -406,7 +445,9 @@
           <span class="tag">HTML5</span>
           <span class="tag">CSS3</span>
           <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
           <span class="tag">React</span>
+          <span class="tag">Next.js</span>
           <span class="tag">Vite</span>
         </div>
       </div>
@@ -414,7 +455,10 @@
         <h4>Backend &amp; Data</h4>
         <div class="stack-list">
           <span class="tag">Node.js</span>
+          <span class="tag">ASP.NET Core</span>
+          <span class="tag">SQL Server</span>
           <span class="tag">PostgreSQL</span>
+          <span class="tag">Supabase</span>
           <span class="tag">REST APIs</span>
           <span class="tag">Formspree</span>
           <span class="tag">Calendly</span>
@@ -424,6 +468,7 @@
         <h4>Tools</h4>
         <div class="stack-list">
           <span class="tag">Git / GitHub</span>
+          <span class="tag">VS Code</span>
           <span class="tag">Vercel</span>
           <span class="tag">Unsplash API</span>
           <span class="tag">Google Maps</span>
